@@ -1,0 +1,150 @@
+{
+  "title": "CompanyInfo",
+  "x-stoplight": {
+    "id": "ftzifjxrzcnk1"
+  },
+  "type": "object",
+  "required": [
+    "companyTswId",
+    "idType",
+    "phoneNo"
+  ],
+  "properties": {
+    "companyTswId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "4114xx9qxoc9j"
+      },
+      "description": "Company TSW ID",
+      "minLength": 10,
+      "maxLength": 11
+    },
+    "hkid": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "p046fzj4f5p4w"
+      },
+      "description": "The identity number of the user (HKID)"
+    },
+    "idType": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ikiza5t9qkc3z"
+      },
+      "maxLength": 5,
+      "description": "The type of identity owned by this organisation – BR, CS, EI, NLC or OTHER."
+    },
+    "idNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "exffh6larpnv7"
+      },
+      "description": "The identity number of this organisation.",
+      "maxLength": 70
+    },
+    "chiName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "rc5zvpig4ilgn"
+      },
+      "description": "Company Chinese Name",
+      "maxLength": 70
+    },
+    "engName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "49vuwpauyp30h"
+      },
+      "description": "Company English Name",
+      "maxLength": 120
+    },
+    "phoneNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "rqgvm3zdiha6s"
+      },
+      "description": "The primary phone number of this organisation.",
+      "maxLength": 50
+    },
+    "phoneNo2": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ukzt3gp3o9mx2"
+      },
+      "maxLength": 20,
+      "description": "The alternative phone number of this organisation."
+    },
+    "faxNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "l4lodjigc52wc"
+      },
+      "maxLength": 50,
+      "description": "Fax number"
+    },
+    "addrLangInd": {
+      "x-stoplight": {
+        "id": "34w4wyq0bx9pd"
+      },
+      "enum": [
+        "C",
+        "E"
+      ],
+      "description": "Address language indicator:<br/>\nC - Chinese<br/>\nE - English\n"
+    },
+    "chiAddress": {
+      "$ref": "./TswAddress.json",
+      "x-stoplight": {
+        "id": "06jtvpywx5ub1"
+      },
+      "description": "Chinese Company Address"
+    },
+    "engAddress": {
+      "$ref": "./TswAddress.json",
+      "x-stoplight": {
+        "id": "4fgwdcbhxgn1k"
+      },
+      "description": "English Company Address"
+    },
+    "agentInd": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "06sxhgkhx1orn"
+      },
+      "maxLength": 1,
+      "description": "Agent Indicator"
+    },
+    "businessStatus": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "519avo7zg9zla"
+      },
+      "description": "Business Status",
+      "maxLength": 1
+    },
+    "businessNature": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "hil459fm0b5jz"
+      },
+      "description": "Business Nature(s) in Hong Kong, separate with commas:<br/>\n\nC – Cargo Freight Forwarding <br/>\nT – Transportation of Cargo <br/>\nW – Warehouse of Cargo<br/>\nO – Others (Please specify, e.g. Data Entry Services Provider)\n"
+    },
+    "businessNatureOther": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "nyda4w86hztyu"
+      },
+      "maxLength": 40,
+      "description": "Other Business Nature, free text."
+    },
+    "profileVersion": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "xm1tosojiepn3"
+      },
+      "format": "int64",
+      "description": "The version of the profile of this organization.",
+      "minimum": 0
+    }
+  }
+}

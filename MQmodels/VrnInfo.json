@@ -1,0 +1,37 @@
+{
+  "title": "VrnInfo",
+  "x-stoplight": {
+    "id": "d2x83q4f69qo8"
+  },
+  "type": "object",
+  "required": [
+    "actionType",
+    "vrnList"
+  ],
+  "properties": {
+    "actionType": {
+      "x-stoplight": {
+        "id": "5yls80icpazi5"
+      },
+      "description": "Action Type:<br/>\nI - Insert<br/>\nD - Delete",
+      "enum": [
+        "I",
+        "D"
+      ]
+    },
+    "vrnList": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "l6jpigrb0ea3w"
+      },
+      "description": "List of Vehicle Number",
+      "items": {
+        "x-stoplight": {
+          "id": "p3om5210spep4"
+        },
+        "type": "string",
+        "maxLength": 35
+      }
+    }
+  }
+}

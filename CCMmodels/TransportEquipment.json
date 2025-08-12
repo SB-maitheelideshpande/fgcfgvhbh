@@ -1,0 +1,33 @@
+{
+  "title": "TransportEquipment",
+  "x-stoplight": {
+    "id": "yz2oqdeenfiw1"
+  },
+  "type": "object",
+  "properties": {
+    "sealNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "cg68fu1ayzmxx"
+      },
+      "maxLength": 35,
+      "description": "Seal Number"
+    },
+    "equipmentTypeCode": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "k3bov56qslhxa"
+      },
+      "description": "Equipment Size and Type (Container) Code",
+      "maxLength": 10
+    },
+    "containerNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "f0g2dr8snq30w"
+      },
+      "maxLength": 17,
+      "description": "Container Number"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "ConsignorInfo",
+  "x-stoplight": {
+    "id": "uw4ohn91j4meh"
+  },
+  "type": "object",
+  "properties": {
+    "chiName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "6xx7e8thyl8p7"
+      },
+      "description": "Chinese Name",
+      "maxLength": 105
+    },
+    "engName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ji5uyzhzxytde"
+      },
+      "description": "Englist Name",
+      "maxLength": 35
+    },
+    "chiAddress": {
+      "$ref": "./TswAddress.json",
+      "x-stoplight": {
+        "id": "l7zi1fyj1uogg"
+      },
+      "description": "Chinese Address"
+    },
+    "engAddress": {
+      "$ref": "./TswAddress.json",
+      "x-stoplight": {
+        "id": "w3k4d3fzcbirv"
+      },
+      "description": "Englist Address"
+    }
+  }
+}

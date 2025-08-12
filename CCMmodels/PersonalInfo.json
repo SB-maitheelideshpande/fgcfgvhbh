@@ -1,0 +1,71 @@
+{
+  "title": "PersonalInfo",
+  "x-stoplight": {
+    "id": "fhiw11qbe03aq"
+  },
+  "type": "object",
+  "properties": {
+    "chiName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "jxsujvgptk1wy"
+      },
+      "maxLength": 105,
+      "description": "Chinese Name"
+    },
+    "engName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "czw5ibg7s3itg"
+      },
+      "maxLength": 35,
+      "description": "Englist Name"
+    },
+    "identityType": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "jcykiwsmjn6ni"
+      },
+      "description": "Identity Type"
+    },
+    "identityNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "xwmxnqiiltnzq"
+      },
+      "description": "Identity Number"
+    },
+    "contactNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "wjenldz24va0o"
+      },
+      "description": "Contact Number"
+    },
+    "secondaryContactNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "jdfa1rxroseco"
+      }
+    },
+    "faxNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "z1a0qrggs39ym"
+      }
+    },
+    "mobileNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "oirpo05b4qjy5"
+      }
+    },
+    "email": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "qztxqnpsmjyhv"
+      },
+      "description": "Email"
+    }
+  }
+}

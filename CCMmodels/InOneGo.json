@@ -1,0 +1,19 @@
+{
+  "title": "InOneGo",
+  "x-stoplight": {
+    "id": "04vnx9rwp55ja"
+  },
+  "type": "object",
+  "properties": {
+    "inOneGoInd": {
+      "x-stoplight": {
+        "id": "195sbqukjxjlu"
+      },
+      "enum": [
+        "Y",
+        "N"
+      ],
+      "description": "In-one-go indicator:<br/>\n\nY - submission in-one-go <br/>\nN - submission not in-one-go"
+    }
+  }
+}

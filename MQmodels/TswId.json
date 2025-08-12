@@ -1,0 +1,32 @@
+{
+  "title": "TswId",
+  "x-stoplight": {
+    "id": "wu32x8redg1za"
+  },
+  "type": "object",
+  "required": [
+    "tswId"
+  ],
+  "properties": {
+    "tswId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "gbqllqd7j7mzi"
+      },
+      "maxLength": 10,
+      "minLength": 10,
+      "description": "TSW ID",
+      "example": "P123892323"
+    },
+    "version": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "vsmkhxzes3vn9"
+      },
+      "format": "int64",
+      "minimum": 1,
+      "example": 1,
+      "description": "Version number"
+    }
+  }
+}

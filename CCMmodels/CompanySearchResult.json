@@ -1,0 +1,40 @@
+{
+  "title": "CompanySearchResult",
+  "x-stoplight": {
+    "id": "pfdzwez9juil9"
+  },
+  "type": "object",
+  "required": [
+    "sort",
+    "pageable"
+  ],
+  "properties": {
+    "resultList": {
+      "x-stoplight": {
+        "id": "tys7rwjfltmy2"
+      },
+      "type": "array",
+      "description": "Return distinct company profile",
+      "items": {
+        "$ref": "./CompanyInfoWithHKID.json",
+        "x-stoplight": {
+          "id": "6vm9ewol5nlo8"
+        }
+      }
+    },
+    "sort": {
+      "$ref": "./Sort.json",
+      "x-stoplight": {
+        "id": "yetuugmw2aoql"
+      },
+      "description": "Sort criteria"
+    },
+    "pageable": {
+      "$ref": "./Pageable.json",
+      "x-stoplight": {
+        "id": "7jcfcn5ummbeb"
+      },
+      "description": "Pagination"
+    }
+  }
+}

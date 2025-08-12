@@ -1,0 +1,37 @@
+{
+  "title": "CefaSiteInfo",
+  "x-stoplight": {
+    "id": "cnbjqvykm2q0a"
+  },
+  "type": "object",
+  "required": [
+    "actionType",
+    "siteList"
+  ],
+  "properties": {
+    "actionType": {
+      "x-stoplight": {
+        "id": "3knzfo2bpg6rz"
+      },
+      "description": "Action Type:<br/>\nI - Insert<br/>\nU - Update<br/>\nD - Delete",
+      "enum": [
+        "I",
+        "U",
+        "D"
+      ]
+    },
+    "siteList": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "fwhzcisjvg9zd"
+      },
+      "description": "List of Cefa Site",
+      "items": {
+        "$ref": "./CefaSite.json",
+        "x-stoplight": {
+          "id": "ky3qe8ifdx46b"
+        }
+      }
+    }
+  }
+}

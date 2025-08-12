@@ -1,0 +1,65 @@
+{
+  "title": "UserSearchCriteria",
+  "x-stoplight": {
+    "id": "s8bmdrjn66rch"
+  },
+  "type": "object",
+  "required": [
+    "sort",
+    "pageable"
+  ],
+  "properties": {
+    "idNoList": {
+      "type": [
+        "array"
+      ],
+      "x-stoplight": {
+        "id": "61xlv5vpo9iwg"
+      },
+      "description": "List of identity number of the user (HKID) ",
+      "items": {
+        "x-stoplight": {
+          "id": "h8nbcisek7xrx"
+        },
+        "type": "string",
+        "maxLength": 35
+      }
+    },
+    "brnList": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "baf29knvkyndj"
+      },
+      "description": "List of Hong Kong Business Registration identity number",
+      "items": {
+        "x-stoplight": {
+          "id": "nro39cx1e069y"
+        },
+        "type": "string",
+        "maxLength": 35
+      }
+    },
+    "companyName": {
+      "x-stoplight": {
+        "id": "jszb1v9pzgjkr"
+      },
+      "description": "Company English name and company Chinese name",
+      "type": "string"
+    },
+    "sort": {
+      "$ref": "./Sort.json",
+      "x-stoplight": {
+        "id": "mapce1sd8xb8a"
+      },
+      "description": "Sort criteria"
+    },
+    "pageable": {
+      "$ref": "./Pageable.json",
+      "x-stoplight": {
+        "id": "gjfcgbwmz0l2u"
+      },
+      "description": "Pagination"
+    }
+  },
+  "description": ""
+}

@@ -1,0 +1,79 @@
+{
+  "title": "BundlingSubscriptionInfo",
+  "x-stoplight": {
+    "id": "o8b8sc5oggskt"
+  },
+  "type": "object",
+  "required": [
+    "status",
+    "version"
+  ],
+  "properties": {
+    "status": {
+      "x-stoplight": {
+        "id": "5dxd2kj3reulw"
+      },
+      "enum": [
+        "S",
+        "U"
+      ],
+      "description": "Subscription Status<br/>\nPossible value: <br/>\n\nS – Subscribed <br/>\nU – UnSubscribed\n"
+    },
+    "areaCode": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "4yf8lodkm8c31"
+      },
+      "description": "Area code of mobile number",
+      "maxLength": 4,
+      "example": "852"
+    },
+    "mobileNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "8udqfyrptjsc4"
+      },
+      "maxLength": 50,
+      "description": "Driver's mobile number",
+      "example": "66668888"
+    },
+    "hkDrivingLicenceNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ocoidhm6451op"
+      },
+      "maxLength": 20,
+      "description": "HKSAR driving licence number.",
+      "example": "T2323491"
+    },
+    "cnDrivingLicenceNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ib4glgctxj014"
+      },
+      "description": "People’s Republic of China driving licence number.",
+      "example": "Z4252132"
+    },
+    "version": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "r599zb2lpjgiv"
+      },
+      "minimum": 1,
+      "format": "int64",
+      "description": "Bundling subscription version"
+    },
+    "vehicleList": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "ug24n5nrwvcs0"
+      },
+      "items": {
+        "$ref": "./VehicleSubscriptionInfo.json",
+        "x-stoplight": {
+          "id": "vrafh7xoxib94"
+        }
+      }
+    }
+  }
+}

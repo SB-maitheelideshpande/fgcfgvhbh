@@ -1,0 +1,24 @@
+title: DataReference
+x-stoplight:
+  id: jvfei0z7ghp4a
+type: object
+examples:
+  - id: 123
+    type: Activity
+description: A reference to resource/data managed by a service.
+properties:
+  sid:
+    type: integer
+    x-stoplight:
+      id: y0xsl1b97idon
+    default: 0
+    example: 123
+    description: id of the data
+    readOnly: true
+  type:
+    type: string
+    x-stoplight:
+      id: 44mbunxqh6d4z
+    example: Activity
+    description: type of the resource/data
+    readOnly: true

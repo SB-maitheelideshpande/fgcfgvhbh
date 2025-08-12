@@ -1,0 +1,48 @@
+{
+  "title": "CefaSite",
+  "x-stoplight": {
+    "id": "e47etox7ij05y"
+  },
+  "type": "object",
+  "required": [
+    "siteCode"
+  ],
+  "properties": {
+    "siteCode": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ohi45x64vdmss"
+      },
+      "description": "Site code",
+      "maxLength": 70
+    },
+    "siteName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "q4k7dg882tv41"
+      },
+      "description": "Site name",
+      "maxLength": 450
+    },
+    "devanningInd": {
+      "x-stoplight": {
+        "id": "qe0gsys4zdl6i"
+      },
+      "enum": [
+        "Y",
+        "N"
+      ],
+      "description": "Devanning site indicator<br/>\nY - Yes<br/>\nN - No"
+    },
+    "examInd": {
+      "x-stoplight": {
+        "id": "02v6qyzxn102v"
+      },
+      "enum": [
+        "Y",
+        "N"
+      ],
+      "description": "Exam site indicator<br/>\nY - Yes <br/>\nN - No "
+    }
+  }
+}

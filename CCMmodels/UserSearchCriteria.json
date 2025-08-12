@@ -1,0 +1,135 @@
+{
+  "title": "UserSearchCriteria",
+  "x-stoplight": {
+    "id": "h6cd1emrk513z"
+  },
+  "type": "object",
+  "required": [
+    "sort",
+    "pageable"
+  ],
+  "properties": {
+    "tswId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "argmlww7huc0n"
+      },
+      "minLength": 10,
+      "maxLength": 10,
+      "description": "TSW ID"
+    },
+    "companyTswId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "4re8zgr3sconv"
+      },
+      "minLength": 10,
+      "maxLength": 11,
+      "description": "Company TSW ID"
+    },
+    "accountType": {
+      "x-stoplight": {
+        "id": "3sun5dujosi97"
+      },
+      "enum": [
+        "PERSON",
+        "EMPLOYEE",
+        "RP"
+      ],
+      "description": "The user type of this user.<br/>\n\nPossible value:<br/>\nPERSON <br/>\nEMPLOYEE <br/>\nRP <br/>"
+    },
+    "userName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "gtvcv9hewo29h"
+      },
+      "description": "User name",
+      "maxLength": 70
+    },
+    "address": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "tzdys52i78kv7"
+      },
+      "description": "Address",
+      "maxLength": 150
+    },
+    "idNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "546ybxh9clqcz"
+      },
+      "description": "Identity number",
+      "maxLength": 35
+    },
+    "vrn": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "0ov306ktuqnfh"
+      },
+      "description": "HK Vehicle Registration number",
+      "maxLength": 25
+    },
+    "closedRoadPermitNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "zb5ba7oqtjgvj"
+      },
+      "maxLength": 11,
+      "description": "HK Closed Road Permit Number"
+    },
+    "companyName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "1m15kszhe9ee0"
+      },
+      "description": "Company Name",
+      "maxLength": 120
+    },
+    "companyType": {
+      "x-stoplight": {
+        "id": "xguo9erxzrceh"
+      },
+      "enum": [
+        "BR",
+        "CS",
+        "EI",
+        "NLC",
+        "OTHER"
+      ],
+      "description": "Company type<br/>\n\nBR - Hong Business Registration <br/>\nNLC - Non-local Company <br/>\nCS - Co-operative Society <br/>\nEI - Educational Institution <br/>\nOTHER - Other\n"
+    },
+    "companyIdNo": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "8z7mwt7jijn58"
+      },
+      "maxLength": 70,
+      "description": "The identity number of the organisation"
+    },
+    "agentInd": {
+      "x-stoplight": {
+        "id": "sa4n0urt1qy8p"
+      },
+      "enum": [
+        "Y",
+        "N"
+      ],
+      "description": "Agent indicator <br>\n\nY - Agent\nN - is not Agent"
+    },
+    "sort": {
+      "$ref": "./Sort.json",
+      "x-stoplight": {
+        "id": "3em87qw1zgv8c"
+      },
+      "description": "Sort criteria"
+    },
+    "pageable": {
+      "$ref": "./Pageable.json",
+      "x-stoplight": {
+        "id": "d09goqog3rqaq"
+      },
+      "description": "Pagination"
+    }
+  }
+}
